@@ -3,7 +3,7 @@ title: "LaTeX 101 - An Introduction"
 subtitle: "Research Bazar (ResBaz) 2023"
 author: "Nelis Drost, (Jens Brinkmann)"
 institute: "The University of Auckland"
-date: today
+date: 2023-06-26
 date-format: full
 # bibliography: refs.bib
 from: markdown+emoji
@@ -43,6 +43,9 @@ format:
       - line-highlight
 --- 
 
+# This session and others
+- We have one further session: https://resbaz.auckland.ac.nz/schedule/#session-114
+
 # What is $\LaTeX$ 
 - Pronounciation: /ˈlɑːtɛk/ or /ˈleɪtɛk/ 
 - $\LaTeX$ is a typesetting system and has been around for almost 40 years (since 1984)
@@ -57,7 +60,7 @@ The name TeX is intended by its developer to be $\tau \epsilon \chi$, TeX is an 
 - **Cross-platform** compatibility (Windows, Mac, Linux, iOS, ...)
 - There is a wide **community** and often several ways to get things done. It is rare that you are the first to ask a question. 
 - Most of the (good) books, journal articles, etc. are created using $\LaTeX$ 
-- At this year's ResBaz, we have two more advanced sessions LINK A LINK B run by Eirian. She is a $\LaTeX$ **superstar**. Think of our current session the foundation.
+
 
 # Showing off how cool it is
 
@@ -170,7 +173,7 @@ Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax ca
 Change a caption on several figures, update the ToC,...
 
 
-## Advantages
+# Advantages
 
 :::{.callout-note}
 There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. and time saved in the long-run. As many of you might work on their PhD thesises, this time balance one day before the deadline vs. some hours or days can't be traded-off 1:1
@@ -195,7 +198,7 @@ There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. a
 - you can customise it heavily
 - you can have inline comments (for future you, for your supervisor, to toggle things on/off)
 - If you ingest some code, tables, data, a lot of figures [ResBaz Workshop Python for image manipulation and repeatable research pipelines](), you will learn to love $\LaTeX$ 
-- Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](link)
+- Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54)
 - Maths!  $f_{c}=z^{2}+c$ AND [Mathpix Snipping](https://mathpix.com/)
 - Plotting (again some learning curve, but no Excel to Word to something schenanigans where you might miss out the latest version of a file and try to publish something wrong)
 - same goes for citations, referencing figures, placing figures (yes, you can specify that it shall be right there where you want it, but you can also let $\LaTeX$ work it's magic)
@@ -213,7 +216,7 @@ For Macrons [a more advanced approach is described here](https://jevonsnotes.wor
 ## Disadvantages
 - it takes time to learn (Overleaf and other more relevant UI etc. make it easier)
 - it can be very fiddely (if you want specifics with tables, or placing images)
-- the collaboration features are quite limited out of the box, yes, a lot can be done (see Eirian), but that mostly requires you to a) bring/acquire some coding knowledge, b) invest time; here, MS Word Clearly wins
+- the collaboration features are quite limited out of the box, yes, a lot can be done, but that mostly requires you to a) bring/acquire some coding knowledge, b) invest time; here, MS Word Clearly wins
 - plugins such as Grammarly don't work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a [buggy workaround](https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf)
 
 
@@ -304,8 +307,6 @@ The idea is to have a local installation and a specialised editor
     - Have a similar tracking mechanism as MS Word's *Track Changes*
     - Sync to Dropbox, GitHub, etc.
 - UoA Bioengineering staff/students get Overleaf premium free
-ALTERNATVIELY: There is another ResBaz session: [Stop Paying for Free Software](https://resbaz.auckland.ac.nz/schedule/#session-082)
-
 
 ## How to get $\LaTeX$ - The *meta* version
 [Quarto](https://quarto.org/) can be considered *one level above* in terms of abstraction ![text](rstudio-qmd-how-it-works.png)
@@ -376,12 +377,18 @@ China       & 212258 & 213766 &  &  \\ \hline
 
 
 # Pointers to other closely related sessions {#sec-pointers}
-- the two(EDIT!) other $\LaTeX$ sessions
-- Quarto
-- Zotero and then https://retorque.re/zotero-better-bibtex/
-- Visualisations (Plots), see other session
+- Wednesday Morning: [$\LaTeX$, or how I learnted to stop worrying and love plain text](https://resbaz.auckland.ac.nz/schedule/#session-114)
+- Tuesday Afternoon: [Introduction to Quarto](https://resbaz.auckland.ac.nz/schedule/#session-117
+)
+- Friday Morning: [Authoring Collaborative Research Projects in Quarto](https://resbaz.auckland.ac.nz/schedule/#session-102)
+
+- Wednesday Afternoon: [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54), see also [https://retorque.re/zotero-better-bibtex/](https://retorque.re/zotero-better-bibtex/)
+- [Introduction to Creating Graphs or Plots for Publications](https://resbaz.auckland.ac.nz/schedule/#session-109)
 - Version Control (GitHub) is efficient as $\LaTeX$ uses plain text files, comparisons (diff) work on this, while they wouldn't on a proprietary MSWord *.docx file
 - Spreadsheets only for data entry, but for 'data wrangling': Python, R, OpenRefine
+  - [How Can Python Help Your Research?](https://resbaz.auckland.ac.nz/schedule/#session-37)
+  - [Introduction to the Python Programming Language](https://resbaz.auckland.ac.nz/schedule/#session-111)
+  - [Introduction to R and RStudio](https://resbaz.auckland.ac.nz/schedule/#session-56)
 
 
 
