@@ -43,6 +43,35 @@ format:
       - line-highlight
 --- 
 
+# What is $\LaTeX$
+## WYSIWYM
+## Alternatives
+
+# Why use $\LaTeX$
+## Advantages
+## Disadvantages
+
+# What can it do?
+## Equations
+## Linked files
+## Formatting
+
+# more...?
+## Tables
+## Packages
+## Style files
+
+# Pain points!
+## References
+## Files
+## Bibliography
+## Version control
+## Contents/index/glossary
+## More - packages
+
+# Next session
+# Resources
+
 # This session and others
 - We have one further session: https://resbaz.auckland.ac.nz/schedule/#session-114
 
