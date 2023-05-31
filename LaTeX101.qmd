@@ -55,12 +55,18 @@ format:
 
 The name TeX is intended by its developer to be $\tau \epsilon \chi$, TeX is an abbreviation of τέχνη (ΤΕΧΝΗ technē), Greek for both "art" and "craft", which is also the root word of technical.
 
+## WYSIWYM
+- $\LaTeX$, like Markdown, is "What you see is what you mean" (WYSIWYM)
+- Most editors, like Word, is "What you see is what you get" (WYSIWYG)
+
 # What is so special about $\LaTeX$
 - It separates **content** from **formatting**, letting you focus on writing and fiddling 🥸 
 - **Cross-platform** compatibility (Windows, Mac, Linux, iOS, ...)
 - There is a wide **community** and often several ways to get things done. It is rare that you are the first to ask a question. 
 - Most of the (good) books, journal articles, etc. are created using $\LaTeX$ 
+- $\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}$
 
+- `\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}`
 
 # Showing off how cool it is
 
@@ -391,4 +397,10 @@ China       & 212258 & 213766 &  &  \\ \hline
   - [Introduction to R and RStudio](https://resbaz.auckland.ac.nz/schedule/#session-56)
 
 
+## Latex guides and references
+[lshort](https://tobi.oetiker.ch/lshort/lshort.pdf)
 
+[Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+[PDF](https://texdoc.org/serve/latex2e.pdf/0) [also as a website](https://latexref.xyz/dev/latex2e.html)
+
+[wiki](https://en.wikibooks.org/wiki/LaTeX)
