@@ -44,38 +44,6 @@ format:
 --- 
 
 # What is $\LaTeX$
-## WYSIWYM
-## Alternatives
-
-# Why use $\LaTeX$
-## Advantages
-## Disadvantages
-
-# What can it do?
-## Equations
-## Linked files
-## Formatting
-
-# more...?
-## Tables
-## Packages
-## Style files
-
-# Pain points!
-## References
-## Files
-## Bibliography
-## Version control
-## Contents/index/glossary
-## More - packages
-
-# Next session
-# Resources
-
-# This session and others
-- We have one further session: https://resbaz.auckland.ac.nz/schedule/#session-114
-
-# What is $\LaTeX$ 
 - Pronounciation: /ˈlɑːtɛk/ or /ˈleɪtɛk/ 
 - $\LaTeX$ is a typesetting system and has been around for almost 40 years (since 1984)
 - While seeming quite *nerdy*, (rather) recent ways of interacting with it make it more user-friendly and approchable
@@ -88,38 +56,87 @@ The name TeX is intended by its developer to be $\tau \epsilon \chi$, TeX is an 
 - $\LaTeX$, like Markdown, is "What you see is what you mean" (WYSIWYM)
 - Most editors, like Word, is "What you see is what you get" (WYSIWYG)
 
-# What is so special about $\LaTeX$
+## Alternatives
+- the ususal suspects: Microsoft Word, Google Doc, Libre/Open/... Office
+  - these are wysiwyg (what you see is what you get)/gui-based, point, click, change. 
+  - their benefits are usually that many not-so-techy people use them and can colleaborate
+  - some things are quite efficient (Tables, for examples, but we'll provide you with some neat workarounds) especially the tracking of changes in MSWord and placing images. Yes, if you want to mock up a layout point-and-click it usually a lot quicker
+
+# Why use $\LaTeX$
 - It separates **content** from **formatting**, letting you focus on writing and fiddling 🥸 
 - **Cross-platform** compatibility (Windows, Mac, Linux, iOS, ...)
 - There is a wide **community** and often several ways to get things done. It is rare that you are the first to ask a question. 
 - Most of the (good) books, journal articles, etc. are created using $\LaTeX$ 
+
+## Advantages
+- (good) $\LaTeX$ output **looks epic** (at least in most cases)
+  - it decides where pictures are placed
+  - maths is neatly rendered
+  - how line-breaks happen (justify text is using a dictionary for line-breaks, unlike many [wysiwyg](https://en.wikipedia.org/wiki/WYSIWYG) editors)
+  - multi-column layouts on one page
+- it is free and not tied to any big corporation, you can often write in any text editor, browser etc. 
+- it is no closed source file (unlike a *.docx* or so) this means we can use Git(Hub) EXAMPLE and other version control systems (we can run things like a `diff` on it, EXAMPLE CODE GOES HERE)
+  - no proprietary software that 
+    - might disappear from the market
+    - charges you an arm and a leg especially over time with a subscription model (yes, I am looking at you, Adobe) 
+    - means you can keep this compeltely offline/local/no-cloud, etc. good for Ethics Approvals and sensitive data, ...
+- you can mostly get outputs to several outputs with altering a few lines (vs. clicking on every slide or here and there)
+
+## Advantages - continued
+- you can customise it heavily
+- you can have inline comments (for future you, for your supervisor, to toggle things on/off)
+- If you ingest some code, tables, data, a lot of figures [ResBaz Workshop Python for image manipulation and repeatable research pipelines](), you will learn to love $\LaTeX$ 
+- Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54)
+- Maths!  $f_{c}=z^{2}+c$ AND [Mathpix Snipping](https://mathpix.com/)
+- Plotting (again some learning curve, but no Excel to Word to something schenanigans where you might miss out the latest version of a file and try to publish something wrong)
+- same goes for citations, referencing figures, placing figures (yes, you can specify that it shall be right there where you want it, but you can also let $\LaTeX$ work it's magic)
+- Portability: LaTeX documents are portable and can be easily converted to other formats, such as PDF, HTML, or EPUB.
+
+## Advantages - continued
+Symbols often render very neatly, sometimes workarounds are needed
+```latex
+M\={a}ori 
+```
+
+For Macrons [a more advanced approach is described here](https://jevonsnotes.wordpress.com/2013/03/22/maori-macrons-and-latex/), as Unicode is mostly used, you can type Māori (so on a Mac use the long-press option ā to write Māori or change the keyboard style) or copy-paste such characters. 
+
+## Disadvantages
+:::{.callout-note}
+There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. and time saved in the long-run. As many of you might work on their PhD thesises, this time balance one day before the deadline vs. some hours or days can't be traded-off 1:1
+:::
+
+- it takes time to learn (Overleaf and other more relevant UI etc. make it easier)
+- it can be very fiddely (if you want specifics with tables, or placing images)
+- the collaboration features are quite limited out of the box, yes, a lot can be done, but that mostly requires you to a) bring/acquire some coding knowledge, b) invest time; here, MS Word Clearly wins
+- plugins such as Grammarly don't work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a [buggy workaround](https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf)
+
+
+# What can it do?
+## Equations
 - $\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}$
 
 - `\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}`
 
-# Showing off how cool it is
-
-
-
-## Visualisations in TikZ  
+## FLoating figures
+## Visualisation
+### Visualisations in TikZ  
 Example showing the power of the [TikZ package](https://tikz.net/)
 
-## Visualisations in TikZ -1
+### Visualisations in TikZ -1
 ![Focused ion beam system, Author: Clemens Helfmeier](Visualisation in tikz.jpg)
 [Source](https://texample.net/tikz/examples/author/clemens-helfmeier/)
 
-## Visualisations in TikZ -2
+### Visualisations in TikZ -2
 ![2D Visualisation in TikZ](Simple Visualisation in tikz.jpg)
 [Source](https://tikz.net/perigals-dissection/)
 
-## Visualisations in TikZ -3
+### Visualisations in TikZ -3
 ![3D Visualisation in TikZ](3DVisInTikZ.jpg)
 [Source](https://tikz.net/differential-of-volume-cylindrical-coordinates/)
 
-## Visualisations in TikZ -4
+### Visualisations in TikZ -4
 ![(Neuronal) Network Visualisation in TikZ](NeuronalNetworksInTikZ.png)
 [Source](https://tikz.net/wp-content/uploads/2021/12/neural_networks-001.png)
-
 
 ## Easily go from one to two column layouts
 
@@ -163,7 +180,6 @@ Note that: ...[twocolumn]{.fragment .fade-in}...
 
 ::::
 
-
 ## Maths/Formulae
 
 ::: {.r-stack}
@@ -174,26 +190,10 @@ Note that: ...[twocolumn]{.fragment .fade-in}...
 ![](MathPix.jpg){.fragment height="700"}
 :::
 
-<!-- <div class="r-stack">
-  <img class="fragment" src="MSWordFormula.jpg" width="1200">
-  <img class="fragment" src="LaTeXIT.jpg" width="300" height="450">
-  <img class="fragment" src="MathPix.jpg" height="700">
-</div> -->
+<!-- [Mathpix Snipping](https://mathpix.com/) -->
 
-<!-- ![MSWord Formula Editor](MSWordFormula.jpg)
-<img src="MSWordFormula.jpg" width="300">
-  -->
-
-<!-- ```latex
-$$ \frac{a}{b}
-```
-
-![Mathpix]()
-[Mathpix Snipping](https://mathpix.com/) -->
-
-
-## External Files
-- You (usuall) reference external files; this means you might have a 'Images' folder. All updates (while maintaining the file name) come into effect quickly (after recompiling); consider a version control mechanism such as GitHub to avoid data loss
+## Linked/external files
+- You (usually) reference external files; this means you might have a 'Images' folder. All updates (while maintaining the file name) come into effect quickly (after recompiling); consider a version control mechanism such as GitHub to avoid data loss
 - This also works for imported data (often in the csv file format) which you can get to [automatically update tables](https://tex.stackexchange.com/questions/146716/importing-csv-file-into-latex-as-a-table)
 - Even layouts can be changed 
 
@@ -207,61 +207,65 @@ Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax ca
 
 Change a caption on several figures, update the ToC,...
 
+## Formatting
 
-# Advantages
+# more...?
+## Tables
+## Packages
+## Style files + templates
+- Template 
+  - Resulting in a neat design (including page numbers in roman, arabic or intentionally omitted)
+  - Shows how to get certain things done (Part, Section, Sub-Section, labels,...)
+  - There are other templates of [Overleaf by the UoA](https://www.overleaf.com/edu/aucklanduni#templates)
 
-:::{.callout-note}
-There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. and time saved in the long-run. As many of you might work on their PhD thesises, this time balance one day before the deadline vs. some hours or days can't be traded-off 1:1
-:::
+# Pain points!
+## References
+## Files
+## Bibliography
+## Version control
+## Contents/index/glossary
+## More - packages
 
-- (good) $\LaTeX$ output **looks epic** (at least in most cases)
-  - it decides where pictures are placed
-  - maths is neatly rendered
-  - how line-breaks happen (justify text is using a dictionary for line-breaks, unlike many [wysiwyg](https://en.wikipedia.org/wiki/WYSIWYG) editors)
-  - multi-column layouts on one page
+# Pointers to other closely related sessions {#sec-pointers}
+- We have one further session: https://resbaz.auckland.ac.nz/schedule/#session-114
+- Wednesday Morning: [$\LaTeX$, or how I learnted to stop worrying and love plain text](https://resbaz.auckland.ac.nz/schedule/#session-114)
+- Tuesday Afternoon: [Introduction to Quarto](https://resbaz.auckland.ac.nz/schedule/#session-117
+)
+- Friday Morning: [Authoring Collaborative Research Projects in Quarto](https://resbaz.auckland.ac.nz/schedule/#session-102)
 
-## Advantages - continued
-- it is free and not tied to any big corporation, you can often write in any text editor, browser etc. 
-- it is no closed source file (unlike a *.docx* or so) this means we can use Git(Hub) EXAMPLE and other version control systems (we can run things like a `diff` on it, EXAMPLE CODE GOES HERE)
-  - no proprietary software that 
-    - might disappear from the market
-    - charges you an arm and a leg especially over time with a subscription model (yes, I am looking at you, Adobe) 
-    - means you can keep this compeltely offline/local/no-cloud, etc. good for Ethics Approvals and sensitive data, ...
-- you can mostly get outputs to several outputs with altering a few lines (vs. clicking on every slide or here and there)
-
-## Advantages - continued
-- you can customise it heavily
-- you can have inline comments (for future you, for your supervisor, to toggle things on/off)
-- If you ingest some code, tables, data, a lot of figures [ResBaz Workshop Python for image manipulation and repeatable research pipelines](), you will learn to love $\LaTeX$ 
-- Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54)
-- Maths!  $f_{c}=z^{2}+c$ AND [Mathpix Snipping](https://mathpix.com/)
-- Plotting (again some learning curve, but no Excel to Word to something schenanigans where you might miss out the latest version of a file and try to publish something wrong)
-- same goes for citations, referencing figures, placing figures (yes, you can specify that it shall be right there where you want it, but you can also let $\LaTeX$ work it's magic)
-- Portability: LaTeX documents are portable and can be easily converted to other formats, such as PDF, HTML, or EPUB.
-
-## Advantages - continued
-Symbols often render very neatly, sometimes workarounds are needed
-```latex
-M\={a}ori 
-```
-
-For Macrons [a more advanced approach is described here](https://jevonsnotes.wordpress.com/2013/03/22/maori-macrons-and-latex/), as Unicode is mostly used, you can type Māori (so on a Mac use the long-press option ā to write Māori or change the keyboard style) or copy-paste such characters. 
+- Wednesday Afternoon: [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54), see also [https://retorque.re/zotero-better-bibtex/](https://retorque.re/zotero-better-bibtex/)
+- [Introduction to Creating Graphs or Plots for Publications](https://resbaz.auckland.ac.nz/schedule/#session-109)
+- Version Control (GitHub) is efficient as $\LaTeX$ uses plain text files, comparisons (diff) work on this, while they wouldn't on a proprietary MSWord *.docx file
+- Spreadsheets only for data entry, but for 'data wrangling': Python, R, OpenRefine
+  - [How Can Python Help Your Research?](https://resbaz.auckland.ac.nz/schedule/#session-37)
+  - [Introduction to the Python Programming Language](https://resbaz.auckland.ac.nz/schedule/#session-111)
+  - [Introduction to R and RStudio](https://resbaz.auckland.ac.nz/schedule/#session-56)
 
 
-## Disadvantages
-- it takes time to learn (Overleaf and other more relevant UI etc. make it easier)
-- it can be very fiddely (if you want specifics with tables, or placing images)
-- the collaboration features are quite limited out of the box, yes, a lot can be done, but that mostly requires you to a) bring/acquire some coding knowledge, b) invest time; here, MS Word Clearly wins
-- plugins such as Grammarly don't work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a [buggy workaround](https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf)
+## Latex guides and references
+[lshort](https://tobi.oetiker.ch/lshort/lshort.pdf)
+
+[Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+[PDF](https://texdoc.org/serve/latex2e.pdf/0) [also as a website](https://latexref.xyz/dev/latex2e.html)
+
+[wiki](https://en.wikibooks.org/wiki/LaTeX)
 
 
-# Alternatives
-- the ususal suspects: Microsoft Word, Google Doc, Libre/Open/... Office
-  - these are wysiwyg (what you see is what you get)/gui-based, point, click, change. 
-  - their benefits are usually that many not-so-techy people use them and can colleaborate
-  - some things are quite efficient (Tables, for examples, but we'll provide you with some neat workarounds) especially the tracking of changes in MSWord and placing images. Yes, if you want to mock up a layout point-and-click it usually a lot quicker
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Left over bits to integrate later? -->
 
 # How does creating a document in $\LaTeX$ work?
 While our current session is just a *taster Session*, some pointers at important elements follow below. 
@@ -302,6 +306,9 @@ You can either
 - all of these can be ingested (reference to external files) in the preamble
 - It's fair to consider this a strong-suit of $\LaTeX$
 - details exceed the scope of this introduction; more in-depth ResBaz sessions are offered (see @sec-pointers) and you can refer to the template provided
+
+
+
 
 # How to get $\LaTeX$
 - There are various options.
@@ -361,10 +368,6 @@ The idea is to have a local installation and a specialised editor
 
 
 # Trying to make your $\LaTeX$ journey easier
-- Template 
-  - Resulting in a neat design (including page numbers in roman, arabic or intentionally omitted)
-  - Shows how to get certain things done (Part, Section, Sub-Section, labels,...)
-  - There are other templates of [Overleaf by the UoA](https://www.overleaf.com/edu/aucklanduni#templates)
 - [TablesGenerator](https://www.tablesgenerator.com/) and or [LaTeXTables](https://www.latex-tables.com/)
 - [Mathpix Snip](https://mathpix.com/)
 - [LaTeXIt](https://www.chachatelier.fr/latexit/latexit-downloads.php?lang=en) (to quickly create equations)
@@ -409,27 +412,3 @@ China       & 212258 & 213766 &  &  \\ \hline
   - Both are a pain to format by hand
   - You shouldn't work with your data in these. These are for publishing only.
   - [Some](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html#problems-with-spreadsheets) see spreadsheet software (MSExcel, Google Sheets, etc.) just suited for data entry, Python, R, OpenRefine, etc. are better alternatives whose learning curve isn't as steep as you might expect and relevant sessions are also provided at this year's ResBaz (see pointers)
-
-
-# Pointers to other closely related sessions {#sec-pointers}
-- Wednesday Morning: [$\LaTeX$, or how I learnted to stop worrying and love plain text](https://resbaz.auckland.ac.nz/schedule/#session-114)
-- Tuesday Afternoon: [Introduction to Quarto](https://resbaz.auckland.ac.nz/schedule/#session-117
-)
-- Friday Morning: [Authoring Collaborative Research Projects in Quarto](https://resbaz.auckland.ac.nz/schedule/#session-102)
-
-- Wednesday Afternoon: [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54), see also [https://retorque.re/zotero-better-bibtex/](https://retorque.re/zotero-better-bibtex/)
-- [Introduction to Creating Graphs or Plots for Publications](https://resbaz.auckland.ac.nz/schedule/#session-109)
-- Version Control (GitHub) is efficient as $\LaTeX$ uses plain text files, comparisons (diff) work on this, while they wouldn't on a proprietary MSWord *.docx file
-- Spreadsheets only for data entry, but for 'data wrangling': Python, R, OpenRefine
-  - [How Can Python Help Your Research?](https://resbaz.auckland.ac.nz/schedule/#session-37)
-  - [Introduction to the Python Programming Language](https://resbaz.auckland.ac.nz/schedule/#session-111)
-  - [Introduction to R and RStudio](https://resbaz.auckland.ac.nz/schedule/#session-56)
-
-
-## Latex guides and references
-[lshort](https://tobi.oetiker.ch/lshort/lshort.pdf)
-
-[Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
-[PDF](https://texdoc.org/serve/latex2e.pdf/0) [also as a website](https://latexref.xyz/dev/latex2e.html)
-
-[wiki](https://en.wikibooks.org/wiki/LaTeX)
