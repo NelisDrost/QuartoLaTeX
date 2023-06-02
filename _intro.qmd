@@ -1,0 +1,56 @@
+
+# What is $\LaTeX$?
+::::{.columns}
+:::{.column width="70%"}
+- Pronounciation: /ˈlɑːtɛk/ or /ˈleɪtɛk/ 
+- $\LaTeX$ is a typesetting system and has been around since 1984
+- Can be hard to get started, but is becoming more and more accessible
+
+- Think of it as **doing some programming to get some neat pdf output**, many editors require compiling (press a button and wait)
+:::
+:::{.column width="30%"}
+![](images/article.png)
+:::
+::::
+<!-- The name TeX is intended by its developer to be $\tau \epsilon \chi$, TeX is an abbreviation of τέχνη (ΤΕΧΝΗ technē), Greek for both "art" and "craft", which is also the root word of technical. -->
+
+## What you see...
+:::: {.columns}
+::: {.column width="50%"}
+### WYSIWYM
+Latex, Markdown and other formats are "What you see is what you mean"
+
+Seperates content from presentation
+
+Harder to learn, much more powerful
+
+Collaboration tools more recent (e.g.: Overleaf)
+:::
+::: {.column width=50%}
+### WYSIWYG
+Most word processors (Word, Google Docs, etc.) are "What you see is what you get"
+
+More intuitive to use, more interactive
+
+Much less powerful, fiddly to get right, and can involve a lot of tedious work
+
+Have had better collaboration tools (i.e.: comments, track changes, suggest mode)
+:::
+::::
+
+<!-- ## Alternatives
+- the ususal suspects: Microsoft Word, Google Doc, Libre/Open/... Office
+  - these are wysiwyg (what you see is what you get)/gui-based, point, click, change. 
+  - their benefits are usually that many not-so-techy people use them and can colleaborate
+  - some things are quite efficient (Tables, for examples, but we'll provide you with some neat workarounds) especially the tracking of changes in MSWord and placing images. Yes, if you want to mock up a layout point-and-click it usually a lot quicker -->
+
+# What is it for?
+::: {.r-stack}
+Articles
+
+Reports
+
+Slideshows
+
+CVs
+:::

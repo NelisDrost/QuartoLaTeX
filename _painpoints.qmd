@@ -1,0 +1,33 @@
+## Linked/external files
+- You (usually) reference external files; this means you might have a 'Images' folder. All updates (while maintaining the file name) come into effect quickly (after recompiling); consider a version control mechanism such as GitHub to avoid data loss
+- This also works for imported data (often in the csv file format) which you can get to [automatically update tables](https://tex.stackexchange.com/questions/146716/importing-csv-file-into-latex-as-a-table)
+- Even layouts can be changed 
+
+Workflow for changing things in citations (Zotero) or getting a citation from a paper (three steps and done), backed up to GitHub, don't worry
+
+Update a picture to the latest version, keep the name, don't worry about overwriting, because you have it on GitHub
+
+Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax can help you with creating vis. for your PowerPoint, Slides, ... Presentation
+
+[Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting)
+
+Change a caption on several figures, update the ToC,...
+
+## Formatting
+
+# more...?
+## Tables
+## Packages
+## Style files + templates
+- Template 
+  - Resulting in a neat design (including page numbers in roman, arabic or intentionally omitted)
+  - Shows how to get certain things done (Part, Section, Sub-Section, labels,...)
+  - There are other templates of [Overleaf by the UoA](https://www.overleaf.com/edu/aucklanduni#templates)
+
+# Pain points!
+## References
+## Files
+## Bibliography
+## Version control
+## Contents/index/glossary
+## More - packages

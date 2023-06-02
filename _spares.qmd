@@ -1,0 +1,147 @@
+<!-- Left over bits to integrate later? -->
+
+# How does creating a document in $\LaTeX$ work?
+While our current session is just a *taster Session*, some pointers at important elements follow below. 
+
+
+## Preamble
+This is similar to programming where you start with importing relevant libraries (things others did to make your life easier) and definitions (for example, colours)
+
+```latex
+\documentclass[twoside,openright,a4paper]
+
+\usepackage[usenames, dvipsnames, table]{xcolor}
+
+\addbibresource{references.bib}
+
+\definecolor{uoadarkblue}{RGB}{0, 70, 127}
+```
+
+
+## Main body
+You can either
+- write all your document in one text file (with the file extension *.tex)
+- $\LaTeX$ commands usually start with the backslash character
+- as in all coding, it is important to close brackets that you have opened and to be quite picky with the details
+- $\LaTeX$ is mostely whitespace-insensitive, this means you can write your `.tex` document without having to worry about empty lines, etc. This also means, if you want to include empty lines, you have to enforce them 
+  - `\\` (two backslashes)
+  - `\newline`
+  - `\hfill \break`
+  - [see also](https://www.overleaf.com/learn/latex/Line_breaks_and_blank_spaces)
+- It is good practice not to create one huge `.tex` file but to use the `\include` command to include chapters
+```latex
+\include{Titlepage}
+\part{Background}
+\include{Chapters/Intro}
+```
+
+## References, Appendices, etc.
+- all of these can be ingested (reference to external files) in the preamble
+- It's fair to consider this a strong-suit of $\LaTeX$
+- details exceed the scope of this introduction; more in-depth ResBaz sessions are offered (see @sec-pointers) and you can refer to the template provided
+
+
+
+
+# How to get $\LaTeX$
+- There are various options.
+- The following (non-exhaustive) list goes from minimalistic (bare-bones) to specific environments either executed locally on your machine or *in the cloud.*
+
+## How to get $\LaTeX$ - the core
+Idea: As software-agnostic as possible
+- Download a $\LaTeX$ distribution, for example [MiKTeX](https://miktex.org/download)
+- install [pandoc](https://pandoc.org/installing.html)
+- use any texteditor 
+  - **Windows:** 
+    - Notepad
+  - **Mac:** 
+    - TextEdit
+  - **Linux:**
+    - various
+  - **Cross-Platform:** 
+    - [VSCode](https://code.visualstudio.com/)
+    - [Sublime](https://www.sublimetext.com/download) 
+- on the commandline: type `pandoc -i ~/Desktop/myWritings.tex -o ~/Desktop/MyRenderedLaTeX.pdf`
+- inspect your neatly renedered document
+
+## How to get $\LaTeX$ - special editors
+The idea is to have a local installation and a specialised editor
+- [Texifier](https://www.texifier.com/)
+- [TeXLive](https://www.tug.org/texlive/)
+- [TeXStudio](https://www.texstudio.org/)
+- [TeXMaker](https://www.xm1math.net/texmaker/)
+
+## How to get $\LaTeX$ - In the browser
+- [Overleaf](https://www.overleaf.com/) is quote famous for *bringing $\LaTeX to the masses*
+- A pro and con at the same time: It runs in the cloud, you don't need to install a $\LaTeX$ distribution, special editor, etc.
+- Recently, they added "Overleaf On-Premises" to circumvent privacy challenges
+- there is a **free plan** which might be a good fit for beginners or if it is just you wokring on a dcument
+- there are **paid plans**, including **student** plans which are currently NZD109/year
+  - The main advantages: 
+    - Invite collaborators, so work on the same document at the same time
+    - Have a similar tracking mechanism as MS Word's *Track Changes*
+    - Sync to Dropbox, GitHub, etc.
+- UoA Bioengineering staff/students get Overleaf premium free
+
+## How to get $\LaTeX$ - The *meta* version
+[Quarto](https://quarto.org/) can be considered *one level above* in terms of abstraction ![text](rstudio-qmd-how-it-works.png)
+
+- $\LaTeX$ is just one of its output, the other benefit is a direct integration with **Python, R, Julia, Observable**
+- you can write in  [markdown syntax](https://quarto.org/docs/authoring/markdown-basics.html)  (.md) so for example `**my text**` (md notation) as oppsed to `\textbf{my text}`
+- the integration with code means you won't have to copy-paste results back and forth
+  - this point can't be stressed enough! You are so likely to forget updating a plot 
+  - you also get reproducability, because it isn't just a screen shot that is integrated into your document
+  <!-- (There are approaches where you can get some (rudimentary) Python code into LaTeX, even into Overleaf, but these are mainly for handling several files (batch processing) keeping track of Python version- Coding colaborators can contribute via a Git workflow
+- Communicate results to non-coding collaborators using git (e.g., [GitHub](https://github.com/))
+
+:::{.callout-tip}
+# On a side-note
+ This deck of slides (based on [RevealJS](https://revealjs.com/), it can also handle a lot of code. 
+:::
+
+
+# Trying to make your $\LaTeX$ journey easier
+- [TablesGenerator](https://www.tablesgenerator.com/) and or [LaTeXTables](https://www.latex-tables.com/)
+- [Mathpix Snip](https://mathpix.com/)
+- [LaTeXIt](https://www.chachatelier.fr/latexit/latexit-downloads.php?lang=en) (to quickly create equations)
+- You can write in Markdown notation and use [Pandoc](https://pandoc.org/) to convert to $\LaTeX$ or MSWord *.docx (which you can easily pass to strict Word users)
+- As $\LaTeX$ is based on plain text files, you can use `diff` commands (see Git) or alternatively use [latexdiff](https://ctan.org/pkg/latexdiff?lang=en) which is better with interpreting the syntax and can highlight changes which are then output to a PDF
+
+## Tables
+
+:::{.columns}
+
+:::{.column width="50%"}
+- A simple table in $\LaTeX$ syntax:
+```latex
+\begin{table}[]
+\caption{My Example Table}
+\label{tab:my-table}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+country     & 1999   & 2000   &  &  \\ \hline
+Afghanistan & 745    & 2666   &  &  \\ \hline
+Brazil      & 37737  & 80488  &  &  \\ \hline
+China       & 212258 & 213766 &  &  \\ \hline
+\end{tabular}
+\end{table}
+```
+:::
+
+:::{.column width="50%"}
+- Alternatively using **markdown** syntax:
+
+```markdown
+| country     | 1999   | 2000   |   |   |
+|-------------|--------|--------|---|---|
+| Afghanistan | 745    | 2666   |   |   |
+| Brazil      | 37737  | 80488  |   |   |
+| China       | 212258 | 213766 |   |   |
+```
+:::
+::::
+
+- To be honest: 
+  - Both are a pain to format by hand
+  - You shouldn't work with your data in these. These are for publishing only.
+  - [Some](https://datacarpentry.org/spreadsheet-ecology-lesson/00-intro/index.html#problems-with-spreadsheets) see spreadsheet software (MSExcel, Google Sheets, etc.) just suited for data entry, Python, R, OpenRefine, etc. are better alternatives whose learning curve isn't as steep as you might expect and relevant sessions are also provided at this year's ResBaz (see pointers)
