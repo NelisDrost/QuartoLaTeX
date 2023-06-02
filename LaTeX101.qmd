@@ -43,29 +43,67 @@ format:
       - line-highlight
 --- 
 
-# What is $\LaTeX$
+# What is $\LaTeX$?
+::::{.columns}
+:::{.column width="70%"}
 - Pronounciation: /ˈlɑːtɛk/ or /ˈleɪtɛk/ 
-- $\LaTeX$ is a typesetting system and has been around for almost 40 years (since 1984)
-- While seeming quite *nerdy*, (rather) recent ways of interacting with it make it more user-friendly and approchable
+- $\LaTeX$ is a typesetting system and has been around since 1984
+- Can be hard to get started, but is becoming more and more accessible
+
 - Think of it as **doing some programming to get some neat pdf output**, many editors require compiling (press a button and wait)
+:::
+:::{.column width="30%"}
+![](images/article.png)
+:::
+::::
+<!-- The name TeX is intended by its developer to be $\tau \epsilon \chi$, TeX is an abbreviation of τέχνη (ΤΕΧΝΗ technē), Greek for both "art" and "craft", which is also the root word of technical. -->
 
+## What you see...
+:::: {.columns}
+::: {.column width="50%"}
+### WYSIWYM
+Latex, Markdown and other formats are "What you see is what you mean"
 
-The name TeX is intended by its developer to be $\tau \epsilon \chi$, TeX is an abbreviation of τέχνη (ΤΕΧΝΗ technē), Greek for both "art" and "craft", which is also the root word of technical.
+Seperates content from presentation
 
-## WYSIWYM
-- $\LaTeX$, like Markdown, is "What you see is what you mean" (WYSIWYM)
-- Most editors, like Word, is "What you see is what you get" (WYSIWYG)
+Harder to learn, much more powerful
 
-## Alternatives
+Collaboration tools more recent (e.g.: Overleaf)
+:::
+::: {.column width=50%}
+### WYSIWYG
+Most word processors (Word, Google Docs, etc.) are "What you see is what you get"
+
+More intuitive to use, more interactive
+
+Much less powerful, fiddly to get right, and can involve a lot of tedious work
+
+Have had better collaboration tools (i.e.: comments, track changes, suggest mode)
+:::
+::::
+
+<!-- ## Alternatives
 - the ususal suspects: Microsoft Word, Google Doc, Libre/Open/... Office
   - these are wysiwyg (what you see is what you get)/gui-based, point, click, change. 
   - their benefits are usually that many not-so-techy people use them and can colleaborate
-  - some things are quite efficient (Tables, for examples, but we'll provide you with some neat workarounds) especially the tracking of changes in MSWord and placing images. Yes, if you want to mock up a layout point-and-click it usually a lot quicker
+  - some things are quite efficient (Tables, for examples, but we'll provide you with some neat workarounds) especially the tracking of changes in MSWord and placing images. Yes, if you want to mock up a layout point-and-click it usually a lot quicker -->
+
+# What is it for?
+::: {.r-stack}
+Articles
+
+Reports
+
+Slideshows
+
+CVs
+:::
 
 # Why use $\LaTeX$
-- It separates **content** from **formatting**, letting you focus on writing and fiddling 🥸 
+- It separates **content** from **formatting**, letting you focus on writing and fiddling
 - **Cross-platform** compatibility (Windows, Mac, Linux, iOS, ...)
-- There is a wide **community** and often several ways to get things done. It is rare that you are the first to ask a question. 
+- There is a wide **community** and often several ways to get things done. It is rare that you are the first to ask a question.
+  - Opens up several other tools, e.g.: quarto, pandocs
 - Most of the (good) books, journal articles, etc. are created using $\LaTeX$ 
 
 ## Advantages
@@ -100,6 +138,9 @@ M\={a}ori
 
 For Macrons [a more advanced approach is described here](https://jevonsnotes.wordpress.com/2013/03/22/maori-macrons-and-latex/), as Unicode is mostly used, you can type Māori (so on a Mac use the long-press option ā to write Māori or change the keyboard style) or copy-paste such characters. 
 
+## Seperate content & presentation
+Allowing re-use, especially with modern tools to generate different outputs
+
 ## Disadvantages
 :::{.callout-note}
 There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. and time saved in the long-run. As many of you might work on their PhD thesises, this time balance one day before the deadline vs. some hours or days can't be traded-off 1:1
@@ -111,6 +152,8 @@ There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. a
 - plugins such as Grammarly don't work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a [buggy workaround](https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf)
 
 
+- Some standard operations require the use of extra packages or tools - e.g.: XeLaTex for non-latin alphabets
+
 # What can it do?
 ## Equations
 - $\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}$
@@ -118,25 +161,35 @@ There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. a
 - `\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}`
 
 ## FLoating figures
-## Visualisation
-### Visualisations in TikZ  
+
+## Visualisation in PSTricks
+
+## Visualisations in TikZ  
 Example showing the power of the [TikZ package](https://tikz.net/)
 
-### Visualisations in TikZ -1
-![Focused ion beam system, Author: Clemens Helfmeier](Visualisation in tikz.jpg)
-[Source](https://texample.net/tikz/examples/author/clemens-helfmeier/)
+:::: {.r-stack}
+![](VisualisationInTikz.jpg)
 
-### Visualisations in TikZ -2
-![2D Visualisation in TikZ](Simple Visualisation in tikz.jpg)
-[Source](https://tikz.net/perigals-dissection/)
+![](SimpleVisualisationInTikz.jpg)
 
-### Visualisations in TikZ -3
-![3D Visualisation in TikZ](3DVisInTikZ.jpg)
-[Source](https://tikz.net/differential-of-volume-cylindrical-coordinates/)
+![](3DVisInTikZ.jpg)
 
-### Visualisations in TikZ -4
-![(Neuronal) Network Visualisation in TikZ](NeuronalNetworksInTikZ.png)
-[Source](https://tikz.net/wp-content/uploads/2021/12/neural_networks-001.png)
+![](NeuronalNetworksInTikZ.png)
+
+::::
+
+<!-- ![Focused ion beam system, Author: Clemens Helfmeier](Visualisation in tikz.jpg)
+<!-- [Source](https://texample.net/tikz/examples/author/clemens-helfmeier/) -->
+
+<!-- ![2D Visualisation in TikZ](Simple Visualisation in tikz.jpg) -->
+<!-- [Source](https://tikz.net/perigals-dissection/) -->
+
+<!-- ![3D Visualisation in TikZ](3DVisInTikZ.jpg) -->
+<!-- [Source](https://tikz.net/differential-of-volume-cylindrical-coordinates/) -->
+
+<!-- ![(Neuronal) Network Visualisation in TikZ](NeuronalNetworksInTikZ.png) -->
+<!-- [Source](https://tikz.net/wp-content/uploads/2021/12/neural_networks-001.png) -->
+
 
 ## Easily go from one to two column layouts
 
