@@ -1,17 +1,39 @@
+# Pain points $\LaTeX$ fixes
+## Breaking changes
+
+## Seperate content & formatting
+- $\LaTeX$ allows you to write content now and worry about formatting later
+- You still need to specify structure by inserting e.g.: **\section**, **\begin{figure}**, **\begin{tabular}**, **\centering**, etc.
+    - You don't need to worry about how those will look until later
+- When you do alter the formatting, it effects the whole document - no need to individually change the numbering system of every figure/table/equation (e.g.: $1a, 1b \rightarrow 1.1, 1.2$)
+
+## Floating figures
+- Figures (and optionally any other content) in $\LaTeX$ float, which means that they are inserted where they fit best, e.g.: in between paragraphs, on a page where that won't leave an awkward gap, or on their own pages
+- You can exert control over these options, prefering _here_, the _top_ or _bottom_ of a page, or on a float only _page_
+- This is especially powerful as you add/remove figures and text, as they generally float to somewhere that looks good, rather than needing to manually move figures between pages when changing content
+
+## Updating figures
+- Figures (also [tables from csv](https://tex.stackexchange.com/questions/146716/importing-csv-file-into-latex-as-a-table), and citations from BibTeX) are loaded from a file when you build the document (e.g.: $./figures/my_plot.png$)
+- This means that if the content of the target file changes, so will the figure in the output document when it is built
+- This is especially useful if you generate figures from code - you can change the figure format in code, regenerate all your figures, then build the latex document to see all the changes
+- This saves you manually inserting each figure every time it changes
+
+## Internal links
+- You can place tags on almost any element in latex (e.g.: a _section_, _figure_, _table_, _equation_, _footnote_ etc.)
+- These can then be reference from anywhere else in the document, either pointing directly to that element (**equation 3.1**) or to the page that element is on (**page 26**)
+- These links are made at build time, so if you add more equations, those links may change to **equation 3.2** on **page 27** automatically
+- Some word processors have a similar feature, but they are famously brittle
+- This also works for automatic generation of tables of contents, tables of figures, etc.
+- This links are clickable in most PDF readers
+- Citations can also be linked to by short form **(Smith et. al, 2000)**, author (**Smith et al.** wrote...), year (previous work done in **2000**), etc. all of which are clickable
+
+## Version control
+
+
 ## Linked/external files
-- You (usually) reference external files; this means you might have a 'Images' folder. All updates (while maintaining the file name) come into effect quickly (after recompiling); consider a version control mechanism such as GitHub to avoid data loss
-- This also works for imported data (often in the csv file format) which you can get to [automatically update tables](https://tex.stackexchange.com/questions/146716/importing-csv-file-into-latex-as-a-table)
-- Even layouts can be changed 
-
-Workflow for changing things in citations (Zotero) or getting a citation from a paper (three steps and done), backed up to GitHub, don't worry
-
-Update a picture to the latest version, keep the name, don't worry about overwriting, because you have it on GitHub
-
 Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax can help you with creating vis. for your PowerPoint, Slides, ... Presentation
 
 [Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting)
-
-Change a caption on several figures, update the ToC,...
 
 ## Formatting
 
