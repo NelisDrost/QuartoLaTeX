@@ -1,1 +1,7 @@
 /.luarc.json
+
+# Quarto build files
+*_files/*
+*.html
+/.quarto/
+_output/
