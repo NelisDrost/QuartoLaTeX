@@ -471,6 +471,7 @@ Nelis Drost, Jens Brinkmann
 <p><span class="fragment">Reports</span></p>
 <p>Factsheets</p>
 <p>Forms</p>
+<p>Repeatable layouts &amp; auto-generated content</p>
 <p><img data-src="images/ticket.jpg" class="fragment"></p>
 </div><div class="column" style="width:30%;">
 <p><img data-src="images/factsheet.jpg" class="fragment"></p>
@@ -483,24 +484,10 @@ Nelis Drost, Jens Brinkmann
 <h2>Presentations</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p>Articles</p>
+<p><em>Beamer</em> template for presentations</p>
+<p>Note - this website/presentation was built using Quarto &amp; RevealJS</p>
 </div><div class="column" style="width:30%;">
 <p><img data-src="images/beamer.jpg"></p>
-</div>
-</div>
-</section>
-<section id="cvs" class="slide level2">
-<h2>CVs</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p>Articles</p>
-</div><div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/article.png"></p>
-<figcaption>Articles</figcaption>
-</figure>
-</div>
 </div>
 </div>
 </section></section>
@@ -668,6 +655,8 @@ Nelis Drost, Jens Brinkmann
 </section>
 <section id="breaking-changes" class="slide level2">
 <h2>Breaking changes</h2>
+<p>Some things are possible in traditional word-processors, but hard and/or fragile.</p>
+<p>Many points-of-no-return, where you either implement a fragile solution that will break if other things change, or switch off some of the automated formatting done by the word processor.</p>
 </section>
 <section id="seperate-content-formatting" class="slide level2">
 <h2>Seperate content &amp; formatting</h2>
@@ -711,7 +700,16 @@ Nelis Drost, Jens Brinkmann
 </section>
 <section id="version-control" class="slide level2">
 <h2>Version control</h2>
-</section>
+<ul>
+<li><span class="math inline">\(\LaTeX\)</span> files are plain text, which means that they work well with version control tools such as <a href="https://www.github.com">Github</a>
+<ul>
+<li>This also gives access to additional tools such as <em>diff</em>, <em>branches</em> and <em>pull requests</em> for collaboration</li>
+</ul></li>
+<li>Using version control gives you a complete history of the state of your document, allowing you to recover old versions, or compare them to the current state</li>
+<li>That complete history gives the <strong>confidence</strong> to make more drastic changes</li>
+</ul>
+
+<img data-src="images/git_diff.png" class="r-stretch quarto-figure-center"></section>
 <section id="linkedexternal-files" class="slide level2">
 <h2>Linked/external files</h2>
 <p>Because of <a href="https://www.chachatelier.fr/latexit/">LaTeXIt</a> knowing the syntax can help you with creating vis. for your PowerPoint, Slides, … Presentation</p>
