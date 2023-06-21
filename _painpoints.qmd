@@ -15,11 +15,11 @@
 ## Updating figures
 - Figures (also [tables from csv](https://tex.stackexchange.com/questions/146716/importing-csv-file-into-latex-as-a-table), and citations from BibTeX) are loaded from a file when you build the document (e.g.: $./figures/my_plot.png$)
 - This means that if the content of the target file changes, so will the figure in the output document when it is built
-- This is especially useful if you generate figures from code - you can change the figure format in code, regenerate all your figures, then build the latex document to see all the changes
+- This is especially useful if you generate figures from code - you can change the figure format in code, regenerate all your figures, then build the $\LaTeX$ document to see all the changes
 - This saves you manually inserting each figure every time it changes
 
 ## Internal links
-- You can place tags on almost any element in latex (e.g.: a _section_, _figure_, _table_, _equation_, _footnote_ etc.)
+- You can place tags on almost any element in $\LaTeX$ (e.g.: a _section_, _figure_, _table_, _equation_, _footnote_ etc.)
 - These can then be reference from anywhere else in the document, either pointing directly to that element (**equation 3.1**) or to the page that element is on (**page 26**)
 - These links are made at build time, so if you add more equations, those links may change to **equation 3.2** on **page 27** automatically
 - Some word processors have a similar feature, but they are famously brittle

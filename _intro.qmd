@@ -2,11 +2,15 @@
 # What is $\LaTeX$?
 ::::{.columns}
 :::{.column width="70%"}
-- Pronounciation: /ˈlɑːtɛk/ or /ˈleɪtɛk/ 
-- $\LaTeX$ is a typesetting system and has been around since 1984
-- Can be hard to get started, but is becoming more and more accessible
+Pronounciation: /ˈlɑːtɛk/ or /ˈleɪtɛk/ 
 
-- Think of it as **doing some programming to get some neat pdf output**, many editors require compiling (press a button and wait)
+$\LaTeX$ is a typesetting system and has been around since 1984
+
+Can be hard to get started, but is becoming more and more accessible
+
+Think of it as combining **content** with **programming** to control how that content should be displayed
+
+Getting the actual output (often a pdf) requires compilation
 :::
 :::{.column width="30%"}
 ![](images/article.png)
@@ -18,11 +22,13 @@
 :::: {.columns}
 ::: {.column width="50%"}
 ### WYSIWYM
-Latex, Markdown and other formats are "What you see is what you mean"
+Latex, Markdown, HTML and other formats are "What you see is what you mean"
 
 Seperates content from presentation
 
-Harder to learn, much more powerful
+Harder to learn, more powerful, and more control over presentation
+
+Can automate a lot of tedious work
 
 Collaboration tools more recent (e.g.: Overleaf)
 :::
@@ -45,12 +51,56 @@ Have had better collaboration tools (i.e.: comments, track changes, suggest mode
   - some things are quite efficient (Tables, for examples, but we'll provide you with some neat workarounds) especially the tracking of changes in MSWord and placing images. Yes, if you want to mock up a layout point-and-click it usually a lot quicker -->
 
 # What is it for?
-::: {.r-stack}
+## Articles
+:::::{.columns}
+::::{.column width="70%"}
 Articles
+Theses
+Books
+::::
 
-Reports
+::::{.column width="30%"}
+![](images/article.png)
+::::
+:::::
 
-Slideshows
+## Reports
+:::::{.columns}
+::::{.column width="40%"}
+[Reports]{.fragment}
 
-CVs
+Factsheets
+
+Forms
+
+![](images/ticket.jpg){.fragment}
+::::
+::::{.column width="30%"}
+![](images/factsheet.jpg){.fragment}
+::::
+::::{.column width="30%"}
+![](images/invoice.jpg){.fragment}
+::::
+:::::
+
+## Presentations
+::::{.columns}
+:::{.column width="70%"}
+Articles
 :::
+
+:::{.column width="30%"}
+![](images/beamer.jpg)
+:::
+::::
+
+## CVs
+::::{.columns}
+:::{.column width="70%"}
+Articles
+:::
+
+:::{.column width="30%"}
+![Articles](images/article.png)
+:::
+::::

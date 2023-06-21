@@ -14,7 +14,7 @@
   - [Introduction to R and RStudio](https://resbaz.auckland.ac.nz/schedule/#session-56)
 
 
-## Latex guides and references
+## $\LaTeX$ guides and references
 [lshort](https://tobi.oetiker.ch/lshort/lshort.pdf)
 
 [Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
