@@ -73,6 +73,8 @@ Factsheets
 
 Forms
 
+Repeatable layouts & auto-generated content
+
 ![](images/ticket.jpg){.fragment}
 ::::
 ::::{.column width="30%"}
@@ -86,21 +88,12 @@ Forms
 ## Presentations
 ::::{.columns}
 :::{.column width="70%"}
-Articles
+_Beamer_ template for presentations
+
+Note - this website/presentation was built using Quarto & RevealJS
 :::
 
 :::{.column width="30%"}
 ![](images/beamer.jpg)
-:::
-::::
-
-## CVs
-::::{.columns}
-:::{.column width="70%"}
-Articles
-:::
-
-:::{.column width="30%"}
-![Articles](images/article.png)
 :::
 ::::

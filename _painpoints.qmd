@@ -1,5 +1,9 @@
 # Pain points $\LaTeX$ fixes
 ## Breaking changes
+Some things are possible in traditional word-processors, but hard and/or fragile.
+
+Many points-of-no-return, where you either implement a fragile solution that will break if other things change, or switch off some of the automated formatting done by the word processor.
+
 
 ## Seperate content & formatting
 - $\LaTeX$ allows you to write content now and worry about formatting later
@@ -28,7 +32,12 @@
 - Citations can also be linked to by short form **(Smith et. al, 2000)**, author (**Smith et al.** wrote...), year (previous work done in **2000**), etc. all of which are clickable
 
 ## Version control
+- $\LaTeX$ files are plain text, which means that they work well with version control tools such as [Github](https://www.github.com)
+  - This also gives access to additional tools such as _diff_, _branches_ and _pull requests_ for collaboration
+- Using version control gives you a complete history of the state of your document, allowing you to recover old versions, or compare them to the current state
+- That complete history gives the **confidence** to make more drastic changes
 
+![](images/git_diff.png){fig-align="center"}
 
 ## Linked/external files
 Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax can help you with creating vis. for your PowerPoint, Slides, ... Presentation
