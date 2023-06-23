@@ -28,7 +28,7 @@ format:
     reveal_options:
       menu:
         numbers: true
-    header: ResBaz 2023 | Nelis Drost, (Jens Brinkmann) | LaTeX 101
+    header: ResBaz 2023 | Nelis Drost, Jens Brinkmann | LaTeX 101
     header-logo: ResBaz_transparent_cropped.svg
     hide-from-titleSlide: all
     filters:

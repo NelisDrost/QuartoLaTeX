@@ -1,9 +1,16 @@
 # Why use $\LaTeX$
-- It separates **content** from **formatting**, letting you focus on writing and fiddling
-- **Cross-platform** compatibility (Windows, Mac, Linux, iOS, ...)
-- There is a wide **community** and often several ways to get things done. It is rare that you are the first to ask a question.
-  - Opens up several other tools, e.g.: quarto, pandocs
-- Most of the (good) books, journal articles, etc. are created using $\LaTeX$ 
+It separates **content** from **formatting**, letting you focus on each individually
+
+Looks great by default, but gives a great deal of control layout and format
+
+Long history and wide community of users - there are plenty of examples, templates, packages, and answers to questions you might have on how to do what you need.
+
+
+Opens up several other tools, e.g.: quarto, pandocs
+
+**Cross-platform** compatibility (Windows, Mac, Linux, iOS, ...)
+
+ Most of the (good) books, journal articles, etc. are created using $\LaTeX$ 
 
 ## Advantages
 - (good) $\LaTeX$ output **looks epic** (at least in most cases)

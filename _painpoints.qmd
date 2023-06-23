@@ -31,6 +31,18 @@ Many points-of-no-return, where you either implement a fragile solution that wil
 - This links are clickable in most PDF readers
 - Citations can also be linked to by short form **(Smith et. al, 2000)**, author (**Smith et al.** wrote...), year (previous work done in **2000**), etc. all of which are clickable
 
+```latex
+\section{Test}\label{sec:test}
+Some text
+\begin{equation}
+  e = m c^2
+  \label{eqn:emc}
+\end{equation}
+
+\subsection{Discussion}
+As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
+```
+
 ## Version control
 - $\LaTeX$ files are plain text, which means that they work well with version control tools such as [Github](https://www.github.com)
   - This also gives access to additional tools such as _diff_, _branches_ and _pull requests_ for collaboration
@@ -45,8 +57,10 @@ Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax ca
 [Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting)
 
 ## Formatting
+i.e.: control - layouts
+![](images/landscape.png)
+![](images/cv.png)
 
-# more...?
 ## Tables
 ## Packages
 ## Style files + templates
@@ -55,10 +69,11 @@ Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax ca
   - Shows how to get certain things done (Part, Section, Sub-Section, labels,...)
   - There are other templates of [Overleaf by the UoA](https://www.overleaf.com/edu/aucklanduni#templates)
 
-# Pain points!
-## References
 ## Files
+Merge with external files/images?
+
+Everything external is automatable
+
 ## Bibliography
-## Version control
+
 ## Contents/index/glossary
-## More - packages

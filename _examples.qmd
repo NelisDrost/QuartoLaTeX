@@ -4,11 +4,8 @@
 
 - `\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}`
 
-## FLoating figures
 
-## Visualisation in PSTricks
-
-## Visualisations in TikZ  
+## Visualisations in TikZ & PSTricks
 Example showing the power of the [TikZ package](https://tikz.net/)
 
 :::: {.r-stack}
@@ -19,6 +16,10 @@ Example showing the power of the [TikZ package](https://tikz.net/)
 ![](3DVisInTikZ.jpg)
 
 ![](NeuronalNetworksInTikZ.png)
+
+![](images/pstricks_flow.png)
+![](images/pstricks_flow2.png)
+![](images/pstricks_network.png)
 
 ::::
 
@@ -36,6 +37,7 @@ Example showing the power of the [TikZ package](https://tikz.net/)
 
 
 ## Easily go from one to two column layouts
+?!? Move to layout/control
 
 ::::{.columns}
 
@@ -86,5 +88,7 @@ Note that: ...[twocolumn]{.fragment .fade-in}...
 
 ![](MathPix.jpg){.fragment height="700"}
 :::
+
+?!? - add two column examples
 
 <!-- [Mathpix Snipping](https://mathpix.com/) -->

@@ -6,6 +6,8 @@ Pronounciation: /ˈlɑːtɛk/ or /ˈleɪtɛk/
 
 $\LaTeX$ is a typesetting system and has been around since 1984
 
+A markup language like HTML or Markdown
+
 Can be hard to get started, but is becoming more and more accessible
 
 Think of it as combining **content** with **programming** to control how that content should be displayed
