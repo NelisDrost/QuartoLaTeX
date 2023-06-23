@@ -49,42 +49,8 @@ As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
 
 ```` -->
 
-## Visualisations in TikZ & PSTricks
-Example showing the power of the [TikZ package](https://tikz.net/)
-
-:::: {.r-stack}
-![](VisualisationInTikz.jpg)
-
-![](SimpleVisualisationInTikz.jpg)
-
-![](3DVisInTikZ.jpg)
-
-![](NeuronalNetworksInTikZ.png)
-
-![](images/pstricks_flow.png)
-![](images/pstricks_flow2.png)
-![](images/pstricks_network.png)
-
-::::
-
-<!-- ![Focused ion beam system, Author: Clemens Helfmeier](Visualisation in tikz.jpg)
-<!-- [Source](https://texample.net/tikz/examples/author/clemens-helfmeier/) -->
-
-<!-- ![2D Visualisation in TikZ](Simple Visualisation in tikz.jpg) -->
-<!-- [Source](https://tikz.net/perigals-dissection/) -->
-
-<!-- ![3D Visualisation in TikZ](3DVisInTikZ.jpg) -->
-<!-- [Source](https://tikz.net/differential-of-volume-cylindrical-coordinates/) -->
-
-<!-- ![(Neuronal) Network Visualisation in TikZ](NeuronalNetworksInTikZ.png) -->
-<!-- [Source](https://tikz.net/wp-content/uploads/2021/12/neural_networks-001.png) -->
-
-
 ## Easily go from one to two column layouts
-?!? Move to layout/control
-
 ::::{.columns}
-
 :::{.column width="50%"}
 ```latex
 \documentclass[10pt,a4paper,onesided]{article} 
@@ -98,10 +64,7 @@ Example showing the power of the [TikZ package](https://tikz.net/)
   \lipsum[1]
 \end{document}
 ```
-Note that: ...[onesided]{.fragment .fade-in}...
 ![One Column](OneCol.jpg)
-
-
 :::
 
 :::{.column width="50%"}
@@ -117,8 +80,26 @@ Note that: ...[onesided]{.fragment .fade-in}...
   \lipsum[1]
 \end{document}
 ```
-Note that: ...[twocolumn]{.fragment .fade-in}...
 ![Two Column](TwoCol.jpg)
 :::
-
 ::::
+
+
+## Visualisations in TikZ & PSTricks
+Example showing the power of the [TikZ package](https://tikz.net/)
+
+:::{.r-stack}
+![](VisualisationInTikz.jpg){.fragment .fade-in-then-out height="700"}
+
+![](SimpleVisualisationInTikz.jpg){.fragment .fade-in-then-out height="700"}
+
+![](3DVisInTikZ.jpg){.fragment .fade-in-then-out height="700"}
+
+![](NeuronalNetworksInTikZ.png){.fragment .fade-in-then-out height="700"}
+
+![](images/pstricks_flow.png){.fragment .fade-in-then-out height="700"}
+
+![](images/pstricks_flow2.png){.fragment .fade-in-then-out height="700"}
+
+![](images/pstricks_network.png){.fragment .fade-in-then-out height="700"}
+:::

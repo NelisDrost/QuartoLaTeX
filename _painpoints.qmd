@@ -4,13 +4,6 @@ Some things are possible in traditional word-processors, but hard and/or fragile
 
 Many points-of-no-return, where you either implement a fragile solution that will break if other things change, or switch off some of the automated formatting done by the word processor.
 
-
-## Seperate content & formatting
-- $\LaTeX$ allows you to write content now and worry about formatting later
-- You still need to specify structure by inserting e.g.: **\section**, **\begin{figure}**, **\begin{tabular}**, **\centering**, etc.
-    - You don't need to worry about how those will look until later
-- When you do alter the formatting, it effects the whole document - no need to individually change the numbering system of every figure/table/equation (e.g.: $1a, 1b \rightarrow 1.1, 1.2$)
-
 ## Floating figures
 - Figures (and optionally any other content) in $\LaTeX$ float, which means that they are inserted where they fit best, e.g.: in between paragraphs, on a page where that won't leave an awkward gap, or on their own pages
 - You can exert control over these options, prefering _here_, the _top_ or _bottom_ of a page, or on a float only _page_
@@ -56,6 +49,10 @@ Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax ca
 
 [Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting)
 
+<!-- polish -->
+If you ingest some code, tables, data, a lot of figures [ResBaz Workshop Python for image manipulation and repeatable research pipelines](), you will learn to love $\LaTeX$ 
+
+
 ## Formatting
 i.e.: control - layouts
 ![](images/landscape.png)
@@ -69,11 +66,7 @@ i.e.: control - layouts
   - Shows how to get certain things done (Part, Section, Sub-Section, labels,...)
   - There are other templates of [Overleaf by the UoA](https://www.overleaf.com/edu/aucklanduni#templates)
 
-## Files
-Merge with external files/images?
-
-Everything external is automatable
-
 ## Bibliography
+- Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54)
 
 ## Contents/index/glossary

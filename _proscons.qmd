@@ -1,10 +1,7 @@
 # Why use $\LaTeX$
 It separates **content** from **formatting**, letting you focus on each individually
 
-Looks great by default, but gives a great deal of control layout and format
-
 Long history and wide community of users - there are plenty of examples, templates, packages, and answers to questions you might have on how to do what you need.
-
 
 Opens up several other tools, e.g.: quarto, pandocs
 
@@ -13,27 +10,30 @@ Opens up several other tools, e.g.: quarto, pandocs
  Most of the (good) books, journal articles, etc. are created using $\LaTeX$ 
 
 ## Advantages
+Looks great by default, but gives a great deal of control layout and format
 - (good) $\LaTeX$ output **looks epic** (at least in most cases)
   - it decides where pictures are placed
   - maths is neatly rendered
   - how line-breaks happen (justify text is using a dictionary for line-breaks, unlike many [wysiwyg](https://en.wikipedia.org/wiki/WYSIWYG) editors)
   - multi-column layouts on one page
 - it is free and not tied to any big corporation, you can often write in any text editor, browser etc. 
-- it is no closed source file (unlike a *.docx* or so) this means we can use Git(Hub) EXAMPLE and other version control systems (we can run things like a `diff` on it, EXAMPLE CODE GOES HERE)
+- it is no closed source file (unlike a *.docx* or so)
+  - can be fed into all sorts of useful tools
   - no proprietary software that 
     - might disappear from the market
     - charges you an arm and a leg especially over time with a subscription model (yes, I am looking at you, Adobe) 
     - means you can keep this compeltely offline/local/no-cloud, etc. good for Ethics Approvals and sensitive data, ...
+  - even if you don't have the software to compile a document, you can still extract the content
 - you can mostly get outputs to several outputs with altering a few lines (vs. clicking on every slide or here and there)
 
 ## Advantages - continued
 - you can customise it heavily
 - you can have inline comments (for future you, for your supervisor, to toggle things on/off)
-- If you ingest some code, tables, data, a lot of figures [ResBaz Workshop Python for image manipulation and repeatable research pipelines](), you will learn to love $\LaTeX$ 
-- Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54)
-- Maths!  $f_{c}=z^{2}+c$ AND [Mathpix Snipping](https://mathpix.com/)
-- Plotting (again some learning curve, but no Excel to Word to something schenanigans where you might miss out the latest version of a file and try to publish something wrong)
-- same goes for citations, referencing figures, placing figures (yes, you can specify that it shall be right there where you want it, but you can also let $\LaTeX$ work it's magic)
+```latex {code-line-numbers="false"}
+\section{Literature review}
+The use of markup languages for document preperation has a long history...
+% TODO - actually review the literature!
+```
 - Portability: $\LaTeX$ documents are portable and can be easily converted to other formats, such as PDF, HTML, or EPUB.
 
 ## Advantages - continued
@@ -44,8 +44,16 @@ M\={a}ori
 
 For Macrons [a more advanced approach is described here](https://jevonsnotes.wordpress.com/2013/03/22/maori-macrons-and-latex/), as Unicode is mostly used, you can type Māori (so on a Mac use the long-press option ā to write Māori or change the keyboard style) or copy-paste such characters. 
 
+<!-- To cover in more detail later -->
+- same goes for citations, referencing figures, placing figures (yes, you can specify that it shall be right there where you want it, but you can also let $\LaTeX$ work it's magic)
+
+
 ## Seperate content & presentation
-Allowing re-use, especially with modern tools to generate different outputs
+- $\LaTeX$ allows you to write content now and worry about formatting later
+- You still need to specify structure by inserting e.g.: **\section**, **\begin{figure}**, **\begin{tabular}**, **\centering**, etc.
+    - You don't need to worry about how those will look until later
+- When you do alter the formatting, it effects the whole document - no need to individually change the numbering system of every figure/table/equation (e.g.: $1a, 1b \rightarrow 1.1, 1.2$)
+- Allows potential re-use with tools like _pandoc_ to produe different outputs
 
 ## Disadvantages
 :::{.callout-note}
@@ -59,3 +67,5 @@ There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. a
 
 
 - Some standard operations require the use of extra packages or tools - e.g.: XeLaTex for non-latin alphabets
+
+- It can be fragile to set up, especially if using a lot of packages/features - i.e.: don't use what you don't need
