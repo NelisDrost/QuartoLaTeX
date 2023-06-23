@@ -1,5 +1,4 @@
 # Pain points $\LaTeX$ fixes
-## Breaking changes
 Some things are possible in traditional word-processors, but hard and/or fragile.
 
 Many points-of-no-return, where you either implement a fragile solution that will break if other things change, or switch off some of the automated formatting done by the word processor.
@@ -9,11 +8,14 @@ Many points-of-no-return, where you either implement a fragile solution that wil
 - You can exert control over these options, prefering _here_, the _top_ or _bottom_ of a page, or on a float only _page_
 - This is especially powerful as you add/remove figures and text, as they generally float to somewhere that looks good, rather than needing to manually move figures between pages when changing content
 
-## Updating figures
+## Content from external files
 - Figures (also [tables from csv](https://tex.stackexchange.com/questions/146716/importing-csv-file-into-latex-as-a-table), and citations from BibTeX) are loaded from a file when you build the document (e.g.: $./figures/my_plot.png$)
 - This means that if the content of the target file changes, so will the figure in the output document when it is built
 - This is especially useful if you generate figures from code - you can change the figure format in code, regenerate all your figures, then build the $\LaTeX$ document to see all the changes
 - This saves you manually inserting each figure every time it changes
+
+<!-- polish -->
+<!-- If you ingest some code, tables, data, a lot of figures [ResBaz Workshop Python for image manipulation and repeatable research pipelines](), you will learn to love $\LaTeX$  -->
 
 ## Internal links
 - You can place tags on almost any element in $\LaTeX$ (e.g.: a _section_, _figure_, _table_, _equation_, _footnote_ etc.)
@@ -44,22 +46,15 @@ As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
 
 ![](images/git_diff.png){fig-align="center"}
 
-## Linked/external files
-Because of [LaTeXIt](https://www.chachatelier.fr/latexit/) knowing the syntax can help you with creating vis. for your PowerPoint, Slides, ... Presentation
-
-[Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting)
-
-<!-- polish -->
-If you ingest some code, tables, data, a lot of figures [ResBaz Workshop Python for image manipulation and repeatable research pipelines](), you will learn to love $\LaTeX$ 
-
 
 ## Formatting
 i.e.: control - layouts
 ![](images/landscape.png)
 ![](images/cv.png)
 
-## Tables
 ## Packages
+[Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting)
+
 ## Style files + templates
 - Template 
   - Resulting in a neat design (including page numbers in roman, arabic or intentionally omitted)
