@@ -14,8 +14,8 @@ from: markdown+emoji
 
 {{< include _proscons.qmd >}}
 
-{{< include _examples.qmd >}}
-
 {{< include _painpoints.qmd >}}
+
+{{< include _examples.qmd >}}
 
 {{< include _outro.qmd >}}

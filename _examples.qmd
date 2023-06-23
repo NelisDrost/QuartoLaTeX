@@ -1,9 +1,53 @@
 # What can it do?
 ## Equations
-- $\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}$
+Often the reason people first investigate $\LaTeX$
 
-- `\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}`
+::::{.columns}
 
+:::{.column width="50%"}
+```latex {code-overflow="wrap" code-line-numbers="false"}
+\beta_R =
+  {{m b_R a^2 c e^{(-\delta n)}}
+  \over
+  {{\delta+a c ({{Y_{S}+Y_{R}}
+    \over
+    {Y_S + Y_R + X}})}}}
+```
+
+:::
+:::{.column width="50%"}
+$\beta_R = {{m b_R a^2 c e^{(-\delta n)}}\over{{\delta+a c ({{Y_{S}+Y_{R}}\over{Y_S + Y_R + X}})}}}$
+:::
+::::
+
+
+::::{.columns .fragment}
+:::{.column width="33%"}
+![](MSWordFormula.jpg){width="1200"}
+:::
+:::{.column width="33%"}
+![](LaTeXIT.jpg)
+:::
+:::{.column width="33%"}
+![](MathPix.jpg)
+:::
+::::
+
+<!-- [Mathpix Snipping](https://mathpix.com/) -->
+<!-- 
+## Test
+````latex
+\section{Test}\label{sec:test}
+Some text
+\begin{equation}
+  e = m c^2
+  \label{eqn:emc}
+\end{equation}
+
+\subsection{Discussion}
+As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
+
+```` -->
 
 ## Visualisations in TikZ & PSTricks
 Example showing the power of the [TikZ package](https://tikz.net/)
@@ -78,17 +122,3 @@ Note that: ...[twocolumn]{.fragment .fade-in}...
 :::
 
 ::::
-
-## Maths/Formulae
-
-::: {.r-stack}
-![](MSWordFormula.jpg){.fragment width="1200"}
-
-![](LaTeXIT.jpg){.fragment height="700"}
-
-![](MathPix.jpg){.fragment height="700"}
-:::
-
-?!? - add two column examples
-
-<!-- [Mathpix Snipping](https://mathpix.com/) -->
