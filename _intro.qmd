@@ -52,42 +52,44 @@ Have had better collaboration tools (i.e.: comments, track changes, suggest mode
   - their benefits are usually that many not-so-techy people use them and can colleaborate
   - some things are quite efficient (Tables, for examples, but we'll provide you with some neat workarounds) especially the tracking of changes in MSWord and placing images. Yes, if you want to mock up a layout point-and-click it usually a lot quicker -->
 
-# What is it for?
-## Articles
-:::::{.columns}
-::::{.column width="70%"}
-Articles
-Theses
-Books
+## What is it for?
+::::{.columns}
+:::{.column width="33%"} 
+[Articles]{.fragment fragment-index=1}
+![](images/article.png){.fragment fragment-index=1}
+:::
+:::{.column width="33%"}
+[Theses]{.fragment fragment-index=2}
+![](images/thesis.jpg){.fragment fragment-index=2}
+<!-- https://benjaminhopfer.com/non-programming/2014/04/10/typesetting-my-masters-thesis-latex.html -->
+:::
+:::{.column width="33%"}
+[Books]{.fragment fragment-index=3}
+![](images/book.jpg){.fragment fragment-index=3}
+<!-- https://www.researchgate.net/publication/271428616_LaTeX_for_Agricultural_Extension_Professionals/figures?lo=1 -->
+:::
 ::::
 
-::::{.column width="30%"}
-![](images/article.png)
-::::
-:::::
-
-## Reports
+## What is it for?
 :::::{.columns}
 ::::{.column width="40%"}
-[Reports]{.fragment}
+[Reports]
 
-Factsheets
+[Forms]{.fragment fragment-index=2}
 
-Forms
+[Repeatable layouts & auto-generated content]{.fragment fragment-index=3}
 
-Repeatable layouts & auto-generated content
-
-![](images/ticket.jpg){.fragment}
+![](images/ticket.jpg){.fragment fragment-index=3}
 ::::
 ::::{.column width="30%"}
-![](images/factsheet.jpg){.fragment}
+![](images/factsheet.jpg){.fragment fragment-index=1}
 ::::
 ::::{.column width="30%"}
-![](images/invoice.jpg){.fragment}
+![](images/invoice.jpg){.fragment fragment-index=2}
 ::::
 :::::
 
-## Presentations
+## What is it for?
 ::::{.columns}
 :::{.column width="70%"}
 _Beamer_ template for presentations
