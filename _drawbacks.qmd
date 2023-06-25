@@ -1,0 +1,29 @@
+# Disadvantages
+:::{.callout-note}
+There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. and time saved in the long-run.
+:::
+
+It takes time to learn (Overleaf and other more relevant UI etc. make it easier)
+
+It can be very fiddly (if you want specifics with tables, or placing images)
+
+Collaboration features are quite limited out of the box
+
+Plugins such as Grammarly don't work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a [buggy workaround](https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf)
+
+It can be fragile to set up, especially if using a lot of packages/features - i.e.: don't use what you don't need
+
+## Tables
+Tables can be fiddly, and a lot of work to enter manually.
+
+```latex {code-line-numbers="false"}
+\begin{center}
+\begin{tabular}{ c c c }
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\  
+ cell7 & cell8 & cell9    
+\end{tabular}
+\end{center}
+```
+
+There are tools to help with this: [TablesGenerator](https://www.tablesgenerator.com/) or [LaTeXTables](https://www.latex-tables.com/)

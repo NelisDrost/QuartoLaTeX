@@ -73,7 +73,7 @@ Have had better collaboration tools (i.e.: comments, track changes, suggest mode
 ## What is it for?
 :::::{.columns}
 ::::{.column width="40%"}
-[Reports]
+Reports
 
 [Forms]{.fragment fragment-index=2}
 
@@ -82,7 +82,7 @@ Have had better collaboration tools (i.e.: comments, track changes, suggest mode
 ![](images/ticket.jpg){.fragment fragment-index=3}
 ::::
 ::::{.column width="30%"}
-![](images/factsheet.jpg){.fragment fragment-index=1}
+![](images/factsheet.jpg)
 ::::
 ::::{.column width="30%"}
 ![](images/invoice.jpg){.fragment fragment-index=2}

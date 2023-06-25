@@ -1,5 +1,4 @@
-# What can it do?
-## Equations
+# Examples - equations
 Often the reason people first investigate $\LaTeX$
 
 ::::{.columns}
@@ -49,7 +48,7 @@ As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
 
 ```` -->
 
-## Easily go from one to two column layouts
+## Examples - two column
 ::::{.columns}
 :::{.column width="50%"}
 ```latex
@@ -85,7 +84,7 @@ As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
 ::::
 
 
-## Visualisations in TikZ & PSTricks
+## Examples - TikZ & PSTricks
 Example showing the power of the [TikZ package](https://tikz.net/)
 
 :::{.r-stack}

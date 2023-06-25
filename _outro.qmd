@@ -1,5 +1,4 @@
 # Pointers to other closely related sessions {#sec-pointers}
-- We have one further session: https://resbaz.auckland.ac.nz/schedule/#session-114
 - Wednesday Morning: [$\LaTeX$, or how I learnted to stop worrying and love plain text](https://resbaz.auckland.ac.nz/schedule/#session-114)
 - Tuesday Afternoon: [Introduction to Quarto](https://resbaz.auckland.ac.nz/schedule/#session-117
 )
@@ -7,7 +6,6 @@
 
 - Wednesday Afternoon: [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54), see also [https://retorque.re/zotero-better-bibtex/](https://retorque.re/zotero-better-bibtex/)
 - [Introduction to Creating Graphs or Plots for Publications](https://resbaz.auckland.ac.nz/schedule/#session-109)
-- Version Control (GitHub) is efficient as $\LaTeX$ uses plain text files, comparisons (diff) work on this, while they wouldn't on a proprietary MSWord *.docx file
 - Spreadsheets only for data entry, but for 'data wrangling': Python, R, OpenRefine
   - [How Can Python Help Your Research?](https://resbaz.auckland.ac.nz/schedule/#session-37)
   - [Introduction to the Python Programming Language](https://resbaz.auckland.ac.nz/schedule/#session-111)
@@ -15,9 +13,10 @@
 
 
 ## $\LaTeX$ guides and references
-[lshort](https://tobi.oetiker.ch/lshort/lshort.pdf)
+[The Not So Short Introduction To Latex](https://tobi.oetiker.ch/lshort/lshort.pdf)
 
-[Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
-[PDF](https://texdoc.org/serve/latex2e.pdf/0) [also as a website](https://latexref.xyz/dev/latex2e.html)
+[Overleaf tutorials](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 
-[wiki](https://en.wikibooks.org/wiki/LaTeX)
+[Latex Reference](https://texdoc.org/serve/latex2e.pdf/0) [(also as a website)](https://latexref.xyz/dev/latex2e.html)
+
+[Wiki-book](https://en.wikibooks.org/wiki/LaTeX)
