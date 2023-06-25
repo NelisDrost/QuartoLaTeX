@@ -61,19 +61,4 @@ For Macrons [a more advanced approach is described here](https://jevonsnotes.wor
 
 Non-latin alphabets take more work, but can be achieved with packages such as _XeLaTex_
 
-## Disadvantages
-:::{.callout-note}
-There is a trade-off between time invested upfront (learning $\LaTeX$ etc. vs. and time saved in the long-run.
-:::
-
-It takes time to learn (Overleaf and other more relevant UI etc. make it easier)
-
-It can be very fiddly (if you want specifics with tables, or placing images)
-
-Collaboration features are quite limited out of the box
-
-Plugins such as Grammarly don't work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a [buggy workaround](https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf)
-
-It can be fragile to set up, especially if using a lot of packages/features - i.e.: don't use what you don't need
-
-## Tables
+<!-- [Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting) -->

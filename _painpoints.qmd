@@ -48,12 +48,15 @@ As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
 
 
 ## Formatting
-i.e.: control - layouts
+::::{.columns}
+:::{.column width="50%"}
 ![](images/landscape.png)
+:::
+:::{.column width="50%"}
 ![](images/cv.png)
+:::
+::::
 
-## Packages
-[Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting)
 
 ## Style files + templates
 - Template 
@@ -65,3 +68,4 @@ i.e.: control - layouts
 - Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54)
 
 ## Contents/index/glossary
+![](images/contents.png)
