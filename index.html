@@ -547,30 +547,7 @@ Nelis Drost, Jens Brinkmann
 </div>
 <p>For Macrons <a href="https://jevonsnotes.wordpress.com/2013/03/22/maori-macrons-and-latex/">a more advanced approach is described here</a>, as Unicode is mostly used, you can type Māori (so on a Mac use the long-press option ā to write Māori or change the keyboard style) or copy-paste such characters.</p>
 <p>Non-latin alphabets take more work, but can be achieved with packages such as <em>XeLaTex</em></p>
-</section>
-<section id="disadvantages" class="slide level2">
-<h2>Disadvantages</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>There is a trade-off between time invested upfront (learning <span class="math inline">\(\LaTeX\)</span> etc. vs.&nbsp;and time saved in the long-run.</p>
-</div>
-</div>
-</div>
-<p>It takes time to learn (Overleaf and other more relevant UI etc. make it easier)</p>
-<p>It can be very fiddly (if you want specifics with tables, or placing images)</p>
-<p>Collaboration features are quite limited out of the box</p>
-<p>Plugins such as Grammarly don’t work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a <a href="https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf">buggy workaround</a></p>
-<p>It can be fragile to set up, especially if using a lot of packages/features - i.e.: don’t use what you don’t need</p>
-</section>
-<section id="tables" class="slide level2">
-<h2>Tables</h2>
+<!-- [Syntax highlighting for code](https://github.com/olivierverdier/python-latex-highlighting) -->
 </section></section>
 <section>
 <section id="pain-points-latex-fixes" class="title-slide slide level1 center">
@@ -633,11 +610,13 @@ Nelis Drost, Jens Brinkmann
 <img data-src="images/git_diff.png" class="r-stretch quarto-figure-center"></section>
 <section id="formatting" class="slide level2">
 <h2>Formatting</h2>
-<p>i.e.: control - layouts <img data-src="images/landscape.png"> <img data-src="images/cv.png"></p>
-</section>
-<section id="packages" class="slide level2">
-<h2>Packages</h2>
-<p><a href="https://github.com/olivierverdier/python-latex-highlighting">Syntax highlighting for code</a></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/landscape.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/cv.png" height="700"></p>
+</div>
+</div>
 </section>
 <section id="style-files-templates" class="slide level2">
 <h2>Style files + templates</h2>
@@ -655,12 +634,20 @@ Nelis Drost, Jens Brinkmann
 <ul>
 <li>Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session <a href="https://resbaz.auckland.ac.nz/schedule/#session-54">Managing References With Zotero</a></li>
 </ul>
-</section>
+
+<img data-src="images/bibliography.png" class="r-stretch"></section>
 <section id="contentsindexglossary" class="slide level2">
 <h2>Contents/index/glossary</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/contents.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/lofigures.png"></p>
+</div>
+</div>
 </section></section>
 <section>
-<section id="disadvantages-1" class="title-slide slide level1 center">
+<section id="disadvantages" class="title-slide slide level1 center">
 <h1>Disadvantages</h1>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -681,7 +668,7 @@ Nelis Drost, Jens Brinkmann
 <p>Plugins such as Grammarly don’t work ootb, for VSCode, you can integrate these as an Extension, on Overleaf there is a <a href="https://www.overleaf.com/learn/how-to/Use_Grammarly_with_Overleaf">buggy workaround</a></p>
 <p>It can be fragile to set up, especially if using a lot of packages/features - i.e.: don’t use what you don’t need</p>
 </section>
-<section id="tables-1" class="slide level2">
+<section id="tables" class="slide level2">
 <h2>Tables</h2>
 <p>Tables can be fiddly, and a lot of work to enter manually.</p>
 <div class="sourceCode" id="cb4" data-code-line-numbers="false"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">center</span>}</span>
