@@ -53,7 +53,7 @@ As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
 ![](images/landscape.png)
 :::
 :::{.column width="50%"}
-![](images/cv.png)
+![](images/cv.png){height="700"}
 :::
 ::::
 
@@ -67,5 +67,14 @@ As we can see in Equation \ref{eqn:emc} in Section \ref{sec:test}...
 ## Bibliography
 - Referencing is quite easy, especially if paired with a reference manager such as Zotero, see ResBaz session [Managing References With Zotero](https://resbaz.auckland.ac.nz/schedule/#session-54)
 
+![](images/bibliography.png)
+
 ## Contents/index/glossary
+::::{.columns}
+:::{.column width="50%"}
 ![](images/contents.png)
+:::
+:::{.column width="50%"}
+![](images/lofigures.png)
+:::
+::::
